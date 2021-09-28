@@ -1,0 +1,20 @@
+Here's the lesson for this: https://www.tutorialspoint.com/elm/elm_introduction.htm
+
+To enter the ELM Shell, type elm repl in your project
+directory.
+
+To exit, type :exit
+
+Lots of commands have changed for Elm...I've had to go digging, 
+but I think the correct thing to do to install packages is 
+leave off that 'paackage part'. So it becomes:
+elm install elm/http
+
+Just look at this init file too...
+https://github.com/elm/compiler/blob/master/hints/init.md
+
+There's also THIS to get started:
+https://guide.elm-lang.org/core_language.html
+
+Elm Archtitechutre basically:
+The Elm program produces HTML to show on screen, and then the computer sends back messages of what is going on. "They clicked a button!"

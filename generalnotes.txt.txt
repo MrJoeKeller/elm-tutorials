@@ -1,0 +1,20 @@
+Elm Introduction Video: https://www.youtube.com/watch?v=kEitFAY7Gc8
+
+What is ELM?
+A program for no runtime exceptions in Javascript
+Functional Language, statically typed
+All data is immutable
+All functions are 'pure'...these wont' change anything else anywhere
+'null'/'undefined' exceptions do not exist
+
+Elm has a lot of cool built in features to manage packages and immutability
+
+Functional programming means that you don't ever get those 'broken' things
+,(like null values)
+
+Fucntional features require discipline
+
+
+-----------------------Start ------------
+This exposes everything in the file: 
+module Main exposing(..)
