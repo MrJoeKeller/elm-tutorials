@@ -18,3 +18,24 @@ https://guide.elm-lang.org/core_language.html
 
 Elm Archtitechutre basically:
 The Elm program produces HTML to show on screen, and then the computer sends back messages of what is going on. "They clicked a button!"
+
+Model - The state of your application
+View - a way to turn your state into HTML
+Update - a way to update your state based on messages
+
+
+Elm always looks for a 'main' value to determine how our program functions 
+
+Elm does not write ACTUAL HTML....
+it's virtual ELM that checks for implementation
+
+The browser sends a msg to the elm runtime.
+That Runtime goes to our 'update' function. It takes the msg AND the current Model
+Then, it does the changes, and returns a NEW model to update to the runtime.
+
+THEN the runtime takes the new model to the 'view' function.
+That view function goes, 'okay, here's the new HTML' to the 
+ELM Runtime.
+
+Finally, that runtime takes that new HTML, generates a new DOM,
+and returns that to the browser
