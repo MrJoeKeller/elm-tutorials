@@ -38,7 +38,7 @@ init =
 
 type Msg
   = Increment
-  | Decrement | ClearAll
+  | Decrement | ClearAll | TenIncrem | TenDecrem
 
 
 update : Msg -> Model -> Model
@@ -52,6 +52,10 @@ update msg model =
       
     ClearAll ->
       0
+    TenIncrem ->
+      model + 10
+    TenDecrem ->
+      model - 10
 
 
 
@@ -65,4 +69,6 @@ view model =
     , div [] [ text (String.fromInt model) ]
     , button [ onClick Increment ] [ text "+" ]
     , button [ onClick ClearAll ] [text "Clear Number"]
+    , button [ onClick TenIncrem] [text "Increment 10"]
+    , button [onClick TenDecrem] [text "Decrement 10"]
     ]

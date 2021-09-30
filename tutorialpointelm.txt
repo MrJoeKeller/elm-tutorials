@@ -39,3 +39,7 @@ ELM Runtime.
 
 Finally, that runtime takes that new HTML, generates a new DOM,
 and returns that to the browser
+
+To run the program, type 'elm reactor' in the project directory of src
+
+To create a new project in a folder, type 'elm init'
